@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url("../fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: Chronicle-Display-Semibold;
+  src: url("../fonts/Chronicle-Display-Semibold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 880px);
+  padding-right: calc(50% - 880px);
+}
+
+.hero {
+  background-image: url(../images/sky-background.webp);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  display: block;
+  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31%, rgb(11, 29, 38) 108%);
+  width: 100%;
+  height: 100%;
+  color: transparent;
+}
+.hero__header {
+  padding-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 13;
+}
+.hero__header-logo {
+  font-family: "Chronicle Display";
+  font-size: 2rem;
+  line-height: 38px;
+  letter-spacing: 0.07em;
+}
+.hero__header-logo-link {
+  color: #ffffff;
+}
+.hero__header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.hero__header-nav-link {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #ffffff;
+}
+.hero__header-account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.hero__mountains-background, .hero__hill-person {
+  width: 100vw;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+.hero__mountains-background {
+  padding-top: 464px;
+  position: absolute;
+  z-index: 11;
+}/*# sourceMappingURL=style.css.map */
